@@ -1,0 +1,160 @@
+---
+title: "Light Palette Token Reference"
+id: palette-light-reference
+status: draft
+version: 0.1.0
+last_updated: 2026-09-10
+source_status: source-derived
+description: "Complete Parcel v2 Light palette token reference generated from the supplied JSON export."
+sources:
+  - "palette(5)/Light.tokens.json"
+---
+
+# Light Palette Token Reference
+
+> This is a generated reference. Token paths, resolved values, aliases, and descriptions are reproduced from the supplied export. Use [Color](../color.md) for operating rules.
+
+**Token count:** 365
+
+## `divider`
+
+| Token path | Exported value | Alias target | Description |
+| --- | --- | --- | --- |
+| divider | #CAD2DD | material/colors -> blueGrey/100 | Used as the universal divider and separator color across 64+ components including ToggleButton, InputField dropdowns, DatePicker, ExpansionList, ListItem, Table, Dialog, Menu, Tab, Stepper, and WorksheetTable. Apply to horizontal rules, vertical separators, and subtle structural borders between content sections; do not use for interactive borders or focus indicators. |
+
+## `Bluegrey`
+
+| Token path | Exported value | Alias target | Description |
+| --- | --- | --- | --- |
+| Bluegrey/50 | #F3F5F7 |  | Base palette swatch Bluegrey/50. Raw color value from the blueGrey ramp — use semantic alias tokens (text/primary, action/active, etc.) in components instead of referencing this swatch directly. |
+| Bluegrey/100 | #CAD2DD |  | Base palette swatch Bluegrey/100. Raw color value from the blueGrey ramp — use semantic alias tokens (text/primary, action/active, etc.) in components instead of referencing this swatch directly. |
+| Bluegrey/200 | #A2AFC3 |  | Base palette swatch Bluegrey/200. Raw color value from the blueGrey ramp — use semantic alias tokens (text/primary, action/active, etc.) in components instead of referencing this swatch directly. |
+| Bluegrey/300 | #8394AF |  | Base palette swatch Bluegrey/300. Raw color value from the blueGrey ramp — use semantic alias tokens (text/primary, action/active, etc.) in components instead of referencing this swatch directly. |
+| Bluegrey/400 | #657A9A |  | Base palette swatch Bluegrey/400. Raw color value from the blueGrey ramp — use semantic alias tokens (text/primary, action/active, etc.) in components instead of referencing this swatch directly. |
+| Bluegrey/500 | #6D81A0 |  | Base palette swatch Bluegrey/500. Raw color value from the blueGrey ramp — use semantic alias tokens (text/primary, action/active, etc.) in components instead of referencing this swatch directly. |
+| Bluegrey/600 | #3C495D |  | Base palette swatch Bluegrey/600. Raw color value from the blueGrey ramp — use semantic alias tokens (text/primary, action/active, etc.) in components instead of referencing this swatch directly. |
+| Bluegrey/700 | #28313E |  | Base palette swatch Bluegrey/700. Raw color value from the blueGrey ramp — use semantic alias tokens (text/primary, action/active, etc.) in components instead of referencing this swatch directly. |
+| Bluegrey/800 | #1A2028 |  | Base palette swatch Bluegrey/800. Raw color value from the blueGrey ramp — use semantic alias tokens (text/primary, action/active, etc.) in components instead of referencing this swatch directly. |
+| Bluegrey/900 | #101319 |  | Base palette swatch Bluegrey/900. Raw color value from the blueGrey ramp — use semantic alias tokens (text/primary, action/active, etc.) in components instead of referencing this swatch directly. |
+| Bluegrey/A100 | #B2BCCD |  | Base palette swatch Bluegrey/A100. Raw color value from the blueGrey ramp — use semantic alias tokens (text/primary, action/active, etc.) in components instead of referencing this swatch directly. |
+| Bluegrey/A200 | #8394AF |  | Base palette swatch Bluegrey/A200. Raw color value from the blueGrey ramp — use semantic alias tokens (text/primary, action/active, etc.) in components instead of referencing this swatch directly. |
+| Bluegrey/A400 | #5A6E8B |  | Base palette swatch Bluegrey/A400. Raw color value from the blueGrey ramp — use semantic alias tokens (text/primary, action/active, etc.) in components instead of referencing this swatch directly. |
+| Bluegrey/A700 | #3C495D |  | Base palette swatch Bluegrey/A700. Raw color value from the blueGrey ramp — use semantic alias tokens (text/primary, action/active, etc.) in components instead of referencing this swatch directly. |
+
+## `text`
+
+| Token path | Exported value | Alias target | Description |
+| --- | --- | --- | --- |
+| text/primary | #3C495D | material/colors -> blueGrey/600 | Used for primary body text, labels, titles, and values across components such as Button, InputField, ListItem, Tab, Table, Dialog, and Chip to ensure maximum readability. Apply as the default text color for all content that requires full contrast; do not use for secondary, disabled, or de-emphasized text. |
+| text/secondary | #3C495D / 80% alpha |  | Used for helper text, placeholders, subtitles, optional labels, and secondary information across components such as InputField, ListItem, ChatArea, ExpansionList, and SearchInput to convey supporting context without competing with primary content. Apply to supplementary text that aids comprehension; do not use for primary labels, titles, or any content that demands immediate attention. |
+| text/disabled | #8394AF | material/colors -> blueGrey/300 | Used for labels, values, and helper text in the disabled state of interactive components such as InputField, Checkbox, Radio, Switch, Tab, and Step to visually communicate that an element is non-interactive. Apply exclusively to content within disabled controls; do not use to de-emphasize text that remains interactive. |
+| text/alwaysDark | #3C495D | material/colors -> blueGrey/600 | Used for chip text in components such as InformationalChip, ListItem, ExpansionList, AdvancedTooltip, and SideNavBar where the text must remain dark regardless of the active theme. Apply when text sits on a light-only surface or badge that does not invert in dark mode; do not use as a general-purpose text color. |
+| text/Autofill | #101319 / 58% alpha |  | Used for text rendered inside browser-autofilled form fields to match the adjusted contrast of the autofill background tint. Apply only to input values populated by the browser's autofill feature; do not use for manually entered text or placeholder content. |
+| text/_states/hover | #3C495D / 4% alpha |  | Used as a semi-transparent overlay fill derived from the primary text color at hover opacity (0.04 light / 0.08 dark) to provide subtle visual feedback on interactive surfaces such as ValidationPatterns. Apply as a background tint on hover state layers; do not use as a text color or for non-interactive elements. |
+| text/_states/selected | #3C495D / 8% alpha |  | Used as a semi-transparent overlay fill derived from the primary text color at selected opacity (0.08 light / 0.16 dark) to indicate an active selection state. Apply as a background tint on selected state layers; do not use as a text color or to denote hover or focus. |
+| text/_states/focus | #3C495D / 12% alpha |  | Used as a semi-transparent overlay fill derived from the primary text color at focus opacity (0.12) in components such as IconButton and Avatar to indicate keyboard or pointer focus. Apply as a background tint on focus and pressed state layers; do not use for hover, selected, or disabled states. |
+| text/_states/focusVisible | #3C495D / 30% alpha |  | Used as a semi-transparent overlay fill derived from the primary text color at focus-visible opacity (0.30) to provide a pronounced visual indicator when an element receives keyboard focus via tab navigation. Apply only to focus-visible state layers; do not use for pointer-driven focus or hover feedback. |
+
+## `primary`
+
+| Token path | Exported value | Alias target | Description |
+| --- | --- | --- | --- |
+| primary/main | #005DE0 | material/colors -> blue/600 | Used as the primary brand color for backgrounds, borders, and text across components such as Button (contained fill, outlined/text label), Fab, InputField (focused border and label), Chip, Tab (active indicator and label), Slider (track and thumb), Switch, StepIcon, PaginationItem, and ProgressLinear/Circular. Apply to interactive elements that carry the primary action or active state; do not use for secondary, destructive, or neutral actions. |
+| primary/dark | #0046AD | material/colors -> blue/800 | Used as the darkened primary variant for hover-state backgrounds on contained surfaces such as Button (contained hovered) and Fab (hovered), and for filled Chip avatar backgrounds and text. Apply only to hovered contained-fill surfaces that need a deeper primary shade; do not use as a resting-state or focus color. |
+| primary/light | #2F7EF7 | material/colors -> blue/400 | Used as the lightened primary variant for accent borders on components such as ColorSwatch and GradientSwatch to provide a softer primary outline on color preview surfaces. Apply for subtle primary-tinted borders on non-interactive or decorative elements; do not use for action-bearing component borders. |
+| primary/contrastText | #FFFFFF |  | Used for text and icons placed on primary-colored backgrounds to ensure accessible contrast in components such as Button (contained label), Fab, Avatar, StepIcon (active number), DatePicker (selected day), BasicTooltip, PaginationItem (active label), and SideNavBar header. Apply exclusively to content sitting on a primary/main fill; do not use on neutral or light backgrounds. |
+| primary/_states/hover | #005DE0 / 4% alpha |  | Used as a semi-transparent primary overlay at hover opacity (0.04 light / 0.08 dark) for hover feedback on outlined and text-variant components such as Button, IconButton, ToggleButton, Checkbox, Radio, Chip, Tab, ResourceLevelTab, and MenuItem (selected). Apply as a background tint on hover-state layers of primary-colored controls; do not use for contained hover states or non-primary controls. |
+| primary/_states/selected | #005DE0 / 8% alpha |  | Used as a semi-transparent primary overlay at selected opacity (0.08 light / 0.16 dark) to indicate active selection in components such as ToggleButton, Chip (filled), TreeListItem, ListItem, TableCell, WorksheetHeaderCell, and ColorSwatch. Apply as a background tint on selected-state layers of primary-colored controls; do not use for hover, focus, or disabled states. |
+| primary/_states/pressed | #005DE0 / 12% alpha |  | Used as a semi-transparent primary overlay at pressed/focus opacity (0.12) for press and ripple feedback in components such as IconButton, ToggleButton, DatePicker (day cell), Chip, ButtonBar, PaginationItem, Tab, and ResourceLevelTab. Apply as a background tint on pressed-state layers of primary-colored controls; do not use for hover or selected states. |
+| primary/_states/focusVisible | #005DE0 / 30% alpha |  | Used as a semi-transparent primary overlay at focus-visible opacity (0.30) to provide a pronounced keyboard-focus indicator in components such as Button (focus ripple), ToggleButton, Checkbox, Switch, and Chip (pressed filled). Apply only to focus-visible and focus-ripple layers; do not use for pointer-driven hover or selected states. |
+| primary/_states/outlinedBorder | {primary.main} | {primary.main} | Used as the border color for outlined and focused states of primary-colored components such as Button (outlined variant), Chip (outlined and active), TreeListItem (focused), ListItem (focused), TableCell (active), PaginationItem, Step (focused), and AppLevelTab (focused). Apply to component borders that communicate primary selection or keyboard focus; do not use for resting neutral borders or disabled outlines. |
+| primary/_states/ToggleSelectedBorder | #005DE0 / 70% alpha |  |  |
+
+## `secondary`
+
+| Token path | Exported value | Alias target | Description |
+| --- | --- | --- | --- |
+| secondary/main | #7B1FA2 | material/colors -> purple/700 | Used as the secondary brand color for fills, borders, and text across components such as Button (secondary variants), IconButton, ToggleButton, Checkbox, Radio, Slider, Chip, and ChatMessage to distinguish secondary actions from primary ones. Apply to interactive elements that carry a secondary or alternative action; do not use for primary call-to-action or neutral elements. |
+| secondary/dark | #4A148C | material/colors -> purple/900 | Used as the darkened secondary variant for hover-state backgrounds on contained surfaces such as Button (contained hovered) and IconButton, and for filled Chip avatar backgrounds. Apply only to hovered contained-fill surfaces that need a deeper secondary shade; do not use as a resting-state color. |
+| secondary/light | #BA68C8 | material/colors -> purple/300 | Reserved as the lightened secondary variant for subtle accent treatments. Currently not applied to any components. Apply for soft secondary-tinted decorative elements or future accent borders; do not use as a primary or interactive surface color. |
+| secondary/contrastText | #FFFFFF |  | Used for text and icons placed on secondary-colored backgrounds to ensure accessible contrast in components such as Button (contained label), ColorSwatch, ColorPalette, ChatMessage, and PaginationItem. Apply exclusively to content sitting on a secondary/main fill; do not use on neutral or light backgrounds. |
+| secondary/_states/hover | #7B1FA2 / 4% alpha |  | Used as a semi-transparent secondary overlay at hover opacity (0.04 light / 0.08 dark) for hover feedback on outlined and text-variant components such as Button, IconButton, ToggleButton, Checkbox, Radio, and Chip. Apply as a background tint on hover-state layers of secondary-colored controls; do not use for contained hover states. |
+| secondary/_states/selected | #7B1FA2 / 8% alpha |  | Used as a semi-transparent secondary overlay at selected opacity (0.08 light / 0.16 dark) to indicate active selection in components such as ToggleButton, Chip (filled secondary), and StatusChip. Apply as a background tint on selected-state layers of secondary-colored controls; do not use for hover or focus states. |
+| secondary/_states/Pressed | #7B1FA2 / 12% alpha |  | Used as a semi-transparent secondary overlay at pressed/focus opacity (0.12) for press and ripple feedback in components such as IconButton, ToggleButton, Radio, Chip, and PaginationItem. Apply as a background tint on pressed-state layers of secondary-colored controls; do not use for hover or selected states. |
+| secondary/_states/focusVisible | #7B1FA2 / 30% alpha |  | Used as a semi-transparent secondary overlay at focus-visible opacity (0.30) to provide a pronounced keyboard-focus indicator in components such as Button (focus ripple), ToggleButton, Checkbox, and Chip. Apply only to focus-visible and focus-ripple layers; do not use for pointer-driven states. |
+| secondary/_states/outlinedBorder | {secondary.main} | {secondary.main} | Used as the border color for outlined and focused states of secondary-colored components such as Button (outlined variant), Chip (outlined secondary), ChatPrompt, and PaginationItem. Apply to component borders that communicate secondary selection or keyboard focus; do not use for resting neutral borders. |
+| secondary/_states/ToggleSelectedBorder | #7B1FA2 / 70% alpha |  |  |
+
+## `action`
+
+| Token path | Exported value | Alias target | Description |
+| --- | --- | --- | --- |
+| action/active | #3C495D | material/colors -> blueGrey/600 | Used as the default icon and interactive-element color across 668+ components including IconButton, Checkbox, Radio, InputField, Switch, TreeListItem, Tab, and all toolbar icons to provide a consistent active-state appearance for controls and indicators. Apply as the standard fill or stroke for icons and interactive affordances in their default state; do not use for text or disabled elements. |
+| action/hover | #3C495D / 4% alpha |  | Used as a semi-transparent neutral overlay at hover opacity (0.04 light / 0.08 dark) for hover feedback on default-colored interactive elements such as Button (inherit), IconButton, ToggleButton, Checkbox, ColorSwatch, Radio, Badge, Chip, TreeListItem, ListItem, and Notification. Apply as a background tint on hover-state layers of default or inherit-colored controls; do not use for primary or semantic-colored hover states. |
+| action/selected | #3C495D / 8% alpha |  | Used as a semi-transparent neutral overlay at selected opacity (0.08 light / 0.16 dark) to indicate selection in default-colored components such as InputField (filled variant), Chip, ListItem (selected), Notification (active), and ChatMessage. Apply as a background tint on selected-state layers; do not use for primary or semantic selection states. |
+| action/Pressed | #3C495D / 12% alpha |  | Used as a semi-transparent neutral overlay at pressed/focus opacity (0.12) for press and ripple feedback on default-colored interactive elements such as Button, IconButton, ToggleButton, Checkbox, ColorSwatch, Radio, Badge, Chip, ListItem, ButtonBar, and PaginationItem. Apply as a background tint on pressed-state layers; do not use for hover or selected states. |
+| action/disabled | #8394AF | material/colors -> blueGrey/300 | Used for text, icons, and borders of interactive elements in their disabled state across 40+ components including Button, IconButton, Fab, ToggleButton, Checkbox, InputField, Radio, Switch, Chip, Tab, and Slider to convey that a control is non-interactive. Apply exclusively to disabled-state fills, strokes, and text; do not use to de-emphasize enabled content. |
+| action/disabledBackground | #3C495D / 12% alpha |  | Used as the background fill for disabled contained surfaces such as Button (contained disabled), LoadingButton, Fab, Skeleton, PaginationItem, StepIcon (disabled), and HTMLeditor to provide a muted surface that signals non-interactivity. Apply only to the background of disabled contained controls; do not use for disabled text or borders. |
+
+## `error`
+
+| Token path | Exported value | Alias target | Description |
+| --- | --- | --- | --- |
+| error/main | #A40410 | material/colors -> red/700 | Used as the error semantic color for fills, borders, and text across components such as Button (error variants), InputField (error border and helper text), Checkbox (error), Radio (error), Switch (error), ExpansionList (error), DialogBanner (error), and ValidationPatterns to communicate an error or invalid state. Apply to elements that signal validation errors or destructive actions; do not use for warnings, info, or general emphasis. |
+| error/dark | #87030D | material/colors -> red/800 | Used as the darkened error variant for hover-state backgrounds on contained error surfaces such as Button (error contained hovered) and IconButton, and for filled Chip and Badge error backgrounds. Apply only to hovered contained-fill error surfaces; do not use as a resting error color. |
+| error/light | #E83B41 | material/colors -> red/400 | Reserved as the lightened error variant for subtle error accent treatments. Currently not applied to any components. Apply for soft error-tinted decorative elements or future notification backgrounds; do not use as a primary error indicator. |
+| error/contrastText | #FFFFFF |  | Used for text and icons placed on error-colored backgrounds to ensure accessible contrast in components such as Button (error contained label), Badge (error), StepIcon (critical), and Step (critical). Apply exclusively to content sitting on an error/main fill; do not use on neutral backgrounds. |
+| error/_states/hover | #A40410 / 4% alpha |  | Used as a semi-transparent error overlay at hover opacity (0.04 light / 0.08 dark) for hover feedback on error-colored controls such as Button, IconButton, Checkbox, Radio, Chip, and ResourceLevelTab. Apply as a background tint on hover-state layers of error-colored controls; do not use for contained hover states. |
+| error/_states/selected | #A40410 / 8% alpha |  | Used as a semi-transparent error overlay at selected opacity (0.08 light / 0.16 dark) to indicate selection in error-colored components such as Chip (filled error), StatusChip (error), and TableCell (error selected). Apply as a background tint on selected-state layers; do not use for hover or focus states. |
+| error/_states/Pressed | #A40410 / 12% alpha |  | Used as a semi-transparent error overlay at pressed/focus opacity (0.12) for press feedback on error-colored controls such as IconButton, Radio, Chip, and ResourceLevelTab. Apply as a background tint on pressed-state layers of error-colored controls; do not use for hover or selected states. |
+| error/_states/focusVisible | #A40410 / 30% alpha |  | Used as a semi-transparent error overlay at focus-visible opacity (0.30) to provide a pronounced keyboard-focus indicator on error-colored controls such as Button (focus ripple), Checkbox, Switch, and Chip. Apply only to focus-visible layers; do not use for pointer-driven states. |
+| error/_states/outlinedBorder | {error.main} | {error.main} | Used as the border color for outlined and focused states of error-colored components such as Button (error outlined), Chip (error outlined), and TableCell (error active). Apply to component borders that communicate an error or invalid state; do not use for neutral or warning borders. |
+
+## `warning`
+
+| Token path | Exported value | Alias target | Description |
+| --- | --- | --- | --- |
+| warning/main | #B06B14 | material/colors -> orange/800 | Used as the warning semantic color for fills, borders, and text across components such as Button (warning variants), InputField (warning), Checkbox, Radio, Switch, Chip, ExpansionList, DialogBanner (warning), ProgressLinear, ProgressCircular, and ResourceLevelTab to signal a cautionary or attention-needed state. Apply to elements that require user awareness without implying an error; do not use for errors or informational messages. |
+| warning/dark | #874F0E | material/colors -> orange/900 | Used as the darkened warning variant for hover-state backgrounds and text in warning-context components such as Button (warning contained hovered), IconButton, InputField (warning-focused label), Chip, ExpansionList (warning detail), ListItem, TableCell (warning), and DialogBanner. Apply to hovered warning surfaces or warning-emphasis text; do not use as a resting warning color. |
+| warning/light | #FF9E1F | material/colors -> orange/500 | Reserved as the lightened warning variant for subtle caution accent treatments. Currently not applied to any components. Apply for soft warning-tinted backgrounds or future notification surfaces; do not use as a primary warning indicator. |
+| warning/contrastText | #FFFFFF |  | Used for text and icons placed on warning-colored backgrounds to ensure accessible contrast in components such as Button (warning contained label). Apply exclusively to content sitting on a warning/main fill; do not use on neutral or light backgrounds. |
+| warning/_states/hover | #B06B14 / 4% alpha |  | Used as a semi-transparent warning overlay at hover opacity (0.04 light / 0.08 dark) for hover feedback on warning-colored controls such as Button, IconButton, Checkbox, Radio, Chip, and ResourceLevelTab. Apply as a background tint on hover-state layers of warning-colored controls; do not use for contained hover states. |
+| warning/_states/selected | #B06B14 / 8% alpha |  | Used as a semi-transparent warning overlay at selected opacity (0.08 light / 0.16 dark) to indicate selection in warning-colored components such as Chip (filled warning), StatusChip (warning), and TableCell (warning selected). Apply as a background tint on selected-state layers; do not use for hover or focus states. |
+| warning/_states/Pressed | #B06B14 / 12% alpha |  | Used as a semi-transparent warning overlay at pressed/focus opacity (0.12) for press feedback on warning-colored controls such as IconButton, Radio, Chip, and ResourceLevelTab. Apply as a background tint on pressed-state layers of warning-colored controls; do not use for hover or selected states. |
+| warning/_states/focusVisible | #B06B14 / 30% alpha |  | Used as a semi-transparent warning overlay at focus-visible opacity (0.30) to provide a pronounced keyboard-focus indicator on warning-colored controls such as Button (focus ripple), Checkbox, Switch, and Chip. Apply only to focus-visible layers; do not use for pointer-driven states. |
+| warning/_states/outlinedBorder | {warning.main} | {warning.main} | Used as the border color for outlined states of warning-colored components such as Button (warning outlined), Chip (warning outlined), and TableCell (warning active). Apply to component borders that communicate a cautionary state; do not use for error or neutral borders. |
+
+## `info`
+
+| Token path | Exported value | Alias target | Description |
+| --- | --- | --- | --- |
+| info/main | #0277BD | material/colors -> lightBlue/800 | Used as the informational semantic color for fills, borders, and text across components such as Button (info variants), IconButton, Checkbox, Radio, Switch, Chip, DialogBanner (info), WorksheetPerformanceIndicator, and ValidationPatterns to convey neutral informational status. Apply to elements that communicate non-critical information or guidance; do not use for errors, warnings, or success feedback. |
+| info/dark | #01579B | material/colors -> lightBlue/900 | Used as the darkened info variant for hover-state backgrounds and text in info-context components such as Button (info contained hovered), IconButton, Chip, StatusChip, DialogBanner, and ResourceToolbar. Apply to hovered info surfaces or info-emphasis text; do not use as a resting info color. |
+| info/light | #03A9F4 | material/colors -> lightBlue/500 | Reserved as the lightened info variant for subtle informational accent treatments. Currently not applied to any components. Apply for soft info-tinted backgrounds or future notification surfaces; do not use as a primary informational indicator. |
+| info/contrastText | #FFFFFF |  | Used for text and icons placed on info-colored backgrounds to ensure accessible contrast in components such as Button (info contained label). Apply exclusively to content sitting on an info/main fill; do not use on neutral or light backgrounds. |
+| info/_states/hover | #0277BD / 4% alpha |  | Used as a semi-transparent info overlay at hover opacity (0.04 light / 0.08 dark) for hover feedback on info-colored controls such as Button, IconButton, Checkbox, Radio, and Chip. Apply as a background tint on hover-state layers of info-colored controls; do not use for contained hover states. |
+| info/_states/selected | #0277BD / 8% alpha |  | Used as a semi-transparent info overlay at selected opacity (0.08 light / 0.16 dark) to indicate selection in info-colored components such as Chip (filled info), StatusChip (info), and ResourceToolbar. Apply as a background tint on selected-state layers; do not use for hover or focus states. |
+| info/_states/Pressed | #0277BD / 12% alpha |  | Used as a semi-transparent info overlay at pressed/focus opacity (0.12) for press feedback on info-colored controls such as IconButton, Radio, and Chip. Apply as a background tint on pressed-state layers of info-colored controls; do not use for hover or selected states. |
+| info/_states/focusVisible | #0277BD / 30% alpha |  | Used as a semi-transparent info overlay at focus-visible opacity (0.30) to provide a pronounced keyboard-focus indicator on info-colored controls such as Button (focus ripple), Checkbox, Switch, and Chip. Apply only to focus-visible layers; do not use for pointer-driven states. |
+| info/_states/outlinedBorder | {info.main} | {info.main} | Used as the border color for outlined states of info-colored components such as Button (info outlined) and Chip (info outlined). Apply to component borders that communicate an informational state; do not use for error, warning, or neutral borders. |
+
+## `success`
+
+| Token path | Exported value | Alias target | Description |
+| --- | --- | --- | --- |
+| success/main | #227841 | material/colors -> green/800 | Used as the success semantic color for fills, borders, and text across components such as Button (success variants), IconButton, Checkbox, Radio, Avatar, Badge, Chip, DialogBanner (success), ProgressLinear, ProgressCircular, Snackbar, StepIcon (complete), and Step (complete) to communicate a positive outcome or completion state. Apply to elements that signal success, completion, or healthy status; do not use for informational or neutral indicators. |
+| success/dark | #16592E | material/colors -> green/900 | Used as the darkened success variant for hover-state backgrounds and text in success-context components such as Button (success contained hovered), IconButton, Badge, Chip, StatusChip, and ResourceToolbar. Apply to hovered success surfaces or success-emphasis text; do not use as a resting success color. |
+| success/light | #309B5C | material/colors -> green/600 | Reserved as the lightened success variant for subtle positive accent treatments. Currently not applied to any components. Apply for soft success-tinted backgrounds or future notification surfaces; do not use as a primary success indicator. |
+| success/contrastText | #FFFFFF |  | Used for text and icons placed on success-colored backgrounds to ensure accessible contrast in components such as Button (success contained label), Badge (success), StepIcon (complete number), Step (complete label), and Stepper. Apply exclusively to content sitting on a success/main fill; do not use on neutral backgrounds. |
+| success/_states/hover | #227841 / 4% alpha |  | Used as a semi-transparent success overlay at hover opacity (0.04 light / 0.08 dark) for hover feedback on success-colored controls such as Button, IconButton, Checkbox, Radio, and Chip. Apply as a background tint on hover-state layers of success-colored controls; do not use for contained hover states. |
+| success/_states/selected | #227841 / 8% alpha |  | Used as a semi-transparent success overlay at selected opacity (0.08 light / 0.16 dark) to indicate selection in success-colored components such as Chip (filled success), StatusChip (success), and ResourceToolbar. Apply as a background tint on selected-state layers; do not use for hover or focus states. |
+| success/_states/pressed | #227841 / 12% alpha |  | Used as a semi-transparent success overlay at pressed/focus opacity (0.12) for press feedback on success-colored controls such as IconButton, Radio, and Chip. Apply as a background tint on pressed-state layers of success-colored controls; do not use for hover or selected states. |
+| success/_states/focusVisible | #227841 / 30% alpha |  | Used as a semi-transparent success overlay at focus-visible opacity (0.30) to provide a pronounced keyboard-focus indicator on success-colored controls such as Button (focus ripple), Checkbox, and Chip. Apply only to focus-visible layers; do not use for pointer-driven states. |
+| success/_states/outlinedBorder | {success.main} | {success.main} | Used as the border color for outlined states of success-colored components such as Button (success outlined) and Chip (success outlined). Apply to component borders that communicate a positive or complete state; do not use for error, warning, or neutral borders. |
+
+## `common`
+
+| Token path | Exported value | Alias target | Description |
+| --- | --- | --- | --- |
+| common/black_states/main | #101319 | material/colors -> blueGrey/900 | Used as the static black base color (blueGrey/900) for dark-on-light icon fills in components such as IconButton, independent of the active theme. Apply when an element must remain visually dark regardless of light or dark mode; do not use as a general-purpose text or icon color — prefer action/active instead. |
+| common/black_states/hover | #101319 / 8% alpha |  | Used as a semi-transparent black overlay at hover opacity (0.08) for hover feedback on dark-on-light elements such as IconButton. Apply as a background tint on hover-state layers; do not use for themed hover states — prefer the relevant semantic hover token. |
